@@ -2,11 +2,23 @@
 
 <robot name="turret" xmlns:xacro="http://ros.org/wiki/xacro">
 
+  <property name="base_size_z" value="0.008" />
+  <property name="secondary_base_size_z" value="0.047" />
+  <property name="secondary_base_offset_x" value="0.0" />
+  <property name="secondary_base_offset_y" value="0.0" />
+  <property name="secondary_base_offset_z" value="${secondary_base_size_z/2 + base_size_z/2}" />
+
+
    <!-- Include all component files -->
    <xacro:include filename="$(find turret_description)/urdf/materials.urdf.xacro" />
    <xacro:include filename="$(find turret_description)/urdf/turret/base.urdf.xacro" />
+   <xacro:include filename="$(find turret_description)/urdf/turret/secondary_base.urdf.xacro"/>
 
    <!-- Add the base and wheels -->
-   <base name="base" color="Black"/>
+   <base name="base" color="Black" base_size_z="${base_size_z}"/>
+
+  <secondary_base name="secondary_base" parent="base" color="Black" size_z="${secondary_base_size_z}">
+     <origin xyz="${secondary_base_offset_x} ${secondary_base_offset_y} ${secondary_base_offset_z}" rpy="0 0 0" />
+   </secondary_base>
 
 </robot>
