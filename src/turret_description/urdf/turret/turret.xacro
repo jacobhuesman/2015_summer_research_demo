@@ -10,9 +10,15 @@
   <property name="secondary_base_offset_y" value="0.0" />
   <property name="secondary_base_offset_z" value="${secondary_base_size_z/2 + base_size_z/2}" />
 
+<<<<<<< HEAD
   <property name="head_offset_x" value="-0.025" />
   <property name="head_offset_y" value="0.0" />
   <property name="head_offset_z" value="0.055" />
+=======
+  <property name="head_offset_x" value="0.0" />
+  <property name="head_offset_y" value="0.0" />
+  <property name="head_offset_z" value="0.0" />
+>>>>>>> 44af0d3ee883ae7056cd3d7cbd676a79f9b89d33
 
    <!-- Include all component files -->
    <xacro:include filename="$(find turret_description)/urdf/materials.urdf.xacro" />
@@ -30,7 +36,11 @@
 
    <!-- Attach the pan and tilt head -->
    <head name="head_base" parent="secondary_base" color="White">
+<<<<<<< HEAD
       <origin xyz="${head_offset_x} ${head_offset_y} ${head_offset_z}" rpy="0 0 0" />
+=======
+      <origin xyz="${head_offset_x} ${head_offset_y} ${head_offset_z}" rpy="0 0 ${PI}" />
+>>>>>>> 44af0d3ee883ae7056cd3d7cbd676a79f9b89d33
    </head>
 
 </robot>
