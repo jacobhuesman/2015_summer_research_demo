@@ -40,10 +40,7 @@
       <visual>
         <origin xyz="0 0 0 " rpy="0 0 0" />
         <geometry>
-<<<<<<< HEAD
           <!--<mesh filename="package://turret_description/meshes/F3.stl" scale="${DYNAMIXEL_MESH_SCALE} ${DYNAMIXEL_MESH_SCALE} ${DYNAMIXEL_MESH_SCALE}"/>-->
-=======
->>>>>>> 44af0d3ee883ae7056cd3d7cbd676a79f9b89d33
           <box size="${F3_HEIGHT} ${F3_WIDTH} ${F3_DEPTH}"/>
         </geometry>
         <material name="${color}"/>
@@ -77,10 +74,7 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-<<<<<<< HEAD
           <!--<mesh filename="package://turret_description/meshes/ax12.stl" scale="${DYNAMIXEL_MESH_SCALE} ${DYNAMIXEL_MESH_SCALE} ${DYNAMIXEL_MESH_SCALE}"/>-->
-=======
->>>>>>> 44af0d3ee883ae7056cd3d7cbd676a79f9b89d33
           <box size="${AX12_HEIGHT} ${AX12_WIDTH} ${AX12_DEPTH}"/>
         </geometry>
         <material name="Black"/>
@@ -116,10 +110,7 @@
       <visual>
         <origin xyz="0 0 0 " rpy="0 0 0" />
         <geometry>
-<<<<<<< HEAD
           <!--<mesh filename="package://turret_description/meshes/F3.stl" scale="${DYNAMIXEL_MESH_SCALE} ${DYNAMIXEL_MESH_SCALE} ${DYNAMIXEL_MESH_SCALE}"/>-->
-=======
->>>>>>> 44af0d3ee883ae7056cd3d7cbd676a79f9b89d33
            <box size="${F3_DEPTH} ${F3_WIDTH} ${F3_HEIGHT}"/>
         </geometry>
         <material name="${color}"/>
@@ -155,10 +146,7 @@
       <visual>
         <origin xyz="0 0 0 " rpy="0 0 0" />
         <geometry>
-<<<<<<< HEAD
           <!--<mesh filename="package://turret_description/meshes/F2.stl" scale="${DYNAMIXEL_MESH_SCALE} ${DYNAMIXEL_MESH_SCALE} ${DYNAMIXEL_MESH_SCALE}"/>-->
-=======
->>>>>>> 44af0d3ee883ae7056cd3d7cbd676a79f9b89d33
           <box size="${F2_DEPTH} ${F2_HEIGHT} ${F2_WIDTH}"/>
         </geometry>
         <material name="${color}"/>

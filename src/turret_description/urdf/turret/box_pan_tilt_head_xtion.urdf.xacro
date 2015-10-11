@@ -43,11 +43,7 @@
 
     <!-- head pan -->
     <dynamixel_AX12_fixed parent="head_base" name="head_pan_servo">
-<<<<<<< HEAD
-       <origin xyz="0.012 0 ${-AX12_WIDTH/2}" rpy="${PI/2} 0 ${PI/2}"/>
-=======
        <origin xyz="-0.012 0 ${-AX12_WIDTH/2}" rpy="${PI/2} 0 ${-PI/2}"/>
->>>>>>> 44af0d3ee883ae7056cd3d7cbd676a79f9b89d33
     </dynamixel_AX12_fixed>
 
     <bioloid_F3_head_revolute parent="head_pan_servo" name="head_pan_bracket" joint_name="head_pan" ulimit="2.9" llimit="-2.9" vlimit="1.571" color="${color}">
@@ -57,11 +53,7 @@
 
     <!--head tilt -->
     <dynamixel_AX12_fixed parent="head_pan_bracket" name="head_tilt_servo">
-<<<<<<< HEAD
-       <origin xyz="0 0 -0.031" rpy="0 ${PI} ${PI}"/>
-=======
        <origin xyz="0 0 -0.031" rpy="0 ${PI} 0"/>
->>>>>>> 44af0d3ee883ae7056cd3d7cbd676a79f9b89d33
     </dynamixel_AX12_fixed>
 
     <bioloid_F2_head_revolute parent="head_tilt_servo" name="head_tilt_bracket" joint_name="head_tilt" ulimit="2.9" llimit="-2.9" vlimit="1.571" color="${color}" >
@@ -71,11 +63,7 @@
 
    <!-- Attach the camera -->
    <camera name="camera" parent="head_tilt_bracket" color="Black">
-<<<<<<< HEAD
-      <origin xyz="${camera_offset_x} ${camera_offset_y} ${camera_offset_z}" rpy="0 0 ${PI}" />
-=======
       <origin xyz="${camera_offset_x} ${camera_offset_y} ${camera_offset_z}" rpy="0 0 0" />
->>>>>>> 44af0d3ee883ae7056cd3d7cbd676a79f9b89d33
    </camera>
 
  </macro>
